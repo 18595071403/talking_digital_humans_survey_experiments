@@ -25,9 +25,10 @@
     *   [GeneFace](https://github.com/Yerfor/GeneFace)
     *   [ER-NeRF](https://github.com/Fictionarry/ER-NeRF)
     *   [SyncTalk](https://github.com/ziqibai/SyncTalk)
-*   **3D Gaussian Splatting (3DGS) 类 (2项)：**
+*   **3D Gaussian Splatting (3DGS) 类 (2项)：**** *3D高斯溅射（3DGS）：** *
     *   [GaussianTalker](https://github.com/KU-CVLAB/GaussianTalker)
     *   [TalkingGaussian](https://github.com/Fictionarry/TalkingGaussian)
+
 
 ---
 
@@ -72,15 +73,15 @@
 
 **配置示例代码：**
 
-```python
+```python   ”“python
 # ================= 配置区域 (请修改这里) =================
-from pathlib import Path
+from pathlib import Path   从pathlib导入路径
 
 # 1. 自动获取项目根目录
-PROJECT_ROOT = Path(__file__).parent.absolute() 
-MODELS_ROOT = PROJECT_ROOT / "models"
+PROJECT_ROOT = Path(__file__).parent.absolute() PROJECT_ROOT = Path(__file__).parent.absolute（）
+MODELS_ROOT = PROJECT_ROOT / "models"MODELS_ROOT = PROJECT_ROOT / "models"；
 
-MODEL_CONFIGS = {
+MODEL_CONFIGS = {   Model_configs = {
     # === 模型 1: Wav2Lip ===
     # 项目链接: https://github.com/Rudrabha/Wav2Lip
     "Wav2lip": { 
