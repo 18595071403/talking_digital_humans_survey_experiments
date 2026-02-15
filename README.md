@@ -10,11 +10,11 @@
 *   **GAN 类 (4项)：**
     *   [Wav2Lip](https://github.com/Rudrabha/Wav2Lip)
     *   [MakeItTalk](https://github.com/AdobeResearch/MakeItTalk)
-    *   [PC-AVS](https://github.com/Hangz-nju-cuhk/PC-AVS).
+    *   [PC-AVS](https://github.com/Hangz-nju-cuhk/PC-AVS)
     *   [VideoReTalking](https://github.com/vinthony/video-retalking)
 *   **扩散模型类 (3项)：**
     *   [DreamTalk](https://github.com/ali-vilab/dreamtalk)
-    *   [Hallo ](https://github.com/fudan-generative-vision/hallo)
+    *   [Hallo](https://github.com/fudan-generative-vision/hallo)
     *   [EchoMimic](https://github.com/BadToBest/EchoMimic)
 
 ### 1.2 基于 NeRF 与 3DGS 的特定人脸模型（共 6 项）
