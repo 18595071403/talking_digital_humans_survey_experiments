@@ -1,0 +1,8 @@
+numpy
+opencv-python
+scikit-image
+lpips
+face-alignment
+scipy
+pytorch-fid
+tqdm
