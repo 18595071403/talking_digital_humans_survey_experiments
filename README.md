@@ -5,12 +5,12 @@
 本实验共选取 **13项** 代表性工作，根据技术路线分为两大类：
 
 ### 1.1 基于GAN与扩散模型的通用模型（共7项）
-此类模型主要针对任意人脸进行驱动 (**General**)：
+此类模型主要针对任意人脸进行驱动 (**General   一般**)：
 
 **GAN类 (4项)：**
 *   [Wav2Lip](https://github.com/Rudrabha/Wav2Lip)
 *   [MakeItTalk](https://github.com/AdobeResearch/MakeItTalk)
-*   [PC-AVS](https://github.com/Hangz-nju-cuhk/PC-AVS)* (PC-AVS) (https://github.com/Hangz-nju-cuhk/PC-AVS)
+*   [PC-AVS](https://github.com/Hangz-nju-cuhk/PC-AVS)
 *   [VideoReTalking](https://github.com/vinthony/video-retalking)
 
 **扩散模型类 (3项)：**
@@ -22,12 +22,12 @@
 此类模型通常需要针对特定人物进行训练 (**Specific**)：
 
 **NeRF类 (4项)：**
-*   [AD-NeRF](https://github.com/YudongGuo/AD-NeRF)* (AD-NeRF) (https://github.com/YudongGuo/AD-NeRF)
+*   [AD-NeRF](https://github.com/YudongGuo/AD-NeRF)
 *   [GeneFace](https://github.com/Yerfor/GeneFace)
 *   [ER-NeRF](https://github.com/Fictionarry/ER-NeRF)
 *   [SyncTalk](https://github.com/ziqibai/SyncTalk)
 
-**3D Gaussian Splatting (3DGS) 类 (2项)：****3D高斯溅射（3DGS）：**
+**3D高斯溅射（3DGS）：**
 *   [GaussianTalker](https://github.com/KU-CVLAB/GaussianTalker)
 *   [TalkingGaussian](https://github.com/Fictionarry/TalkingGaussian)
 
@@ -74,37 +74,37 @@
 
 **配置示例代码：**
 
-```python
+```python   ”“python
 # ================= 配置区域 (请修改这里) =================
-from pathlib import Path
+from pathlib import Path   从pathlib导入路径
 
 # 1. 自动获取项目根目录
-PROJECT_ROOT = Path(__file__).parent.absolute() 
-MODELS_ROOT = PROJECT_ROOT / "models"
+PROJECT_ROOT = Path(__file__).parent.absolute() PROJECT_ROOT = Path(__file__).parent.absolute（）
+MODELS_ROOT = PROJECT_ROOT / "models"MODELS_ROOT = PROJECT_ROOT / "models"；
 
-MODEL_CONFIGS = {   Model_configs = {
+MODEL_CONFIGS = {   Model_configs = {MODEL_CONFIGS = {MODEL_CONFIGS = {
     # === 模型 1: Wav2Lip ===
     # 项目链接: https://github.com/Rudrabha/Wav2Lip
-    "Wav2lip": { 
-        "category": "general", 
+    "Wav2lip": {    "Wav2lip": {
+        "category": "general",    "category": "general",
         # 【重要】修改为你本地 Wav2Lip 环境的 python.exe 绝对路径
-        "python_path": r"C:\Users\Lenovo\anaconda3\envs\wav2lip\python.exe", 
-        "script_path": MODELS_ROOT / "Wav2lip/inference.py", 
-        "checkpoint": "checkpoints/wav2lip.pth",
-        "cmd_template": (
-            "--checkpoint_path {checkpoint} "
-            "--face {video} "
-            "--audio {audio} "
-            "--outfile {out} "
-            "--pads 0 10 0 0 --nosmooth"
+        "python_path": r"C:\Users\Lenovo\anaconda3\envs\wav2lip\python.exe", "python_path": r"C:\Users\Lenovo\anaconda3\envs\wav2lip\python.exe",
+        "script_path": MODELS_ROOT / "Wav2lip/inference.py", "script_path": MODELS_ROOT / "Wav2lip/inference.py",
+        "checkpoint": "checkpoints/wav2lip.pth"," checkpoint": "牌号/ wav2lip.pth"
+        "cmd_template": (   " cmd_template":(
+            "--checkpoint_path {checkpoint} "——checkpoint_path {checkpoint} "；
+            "--face {video} "   ——face {video} "；
+            "--audio {audio} "   ——音频{音频}"；
+            "--outfile {out} "   ——outfile {out} "；
+            "--pads 0 10 0 0 --nosmooth"——pads 0 0 0 0 0——nosmooth"；
         ),
     },
     
     # === 模型 2: AD-NeRF ===
     # 项目链接: https://github.com/YudongGuo/AD-NeRF
-    "AD-NeRF": { 
-        "category": "specific", 
-        "python_path": r"C:\Users\Lenovo\anaconda3\envs\adnerf\python.exe",
+    "AD-NeRF": {    "AD-NeRF": {
+        "category": "specific",    "category": "specific",
+        "python_path": r"C:\Users\Lenovo\anaconda3\envs\adnerf\python.exe","python_path": r"C:\Users\Lenovo\anaconda3\envs\adnerf\python.exe",
         "script_path": MODELS_ROOT / "AD-NeRF/test.py",script_path": MODELS_ROOT / "AD-NeRF/test.py"；
         "checkpoint": "checkpoints/obama.pth"," checkpoint": "牌号/ obama.pth"
         "cmd_template": (   " cmd_template":(
