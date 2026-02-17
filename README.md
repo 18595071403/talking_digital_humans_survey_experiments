@@ -127,7 +127,7 @@ python run_benchmark.py
 ### 3.2 评测指标环境搭建
 为了统一评测标准，需建立独立的评估环境。
 
-1.  **创建环境** (推荐 Python 3.10 + CUDA 12.1)：1.  **创建环境** (推荐 Python 3.10   CUDA 12.1)：
+1.  **创建环境** (推荐 Python 3.10 + CUDA 12.1)：
     ```bash   ”“bash
     conda create -n digital_human_eval python=3.10 -yConda create -n digital_human_eval python=3.10 -y
     conda activate digital_human_eval激活digital_human_eval
