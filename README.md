@@ -65,7 +65,7 @@
 ### 3.1 训练与测试环境搭建
 
 #### (1) 数据集准备
-1.  从 Hugging Face 下载 `clips.zip`。
+1.  从 [Hugging Face](https://huggingface.co/datasets/global-optima-research/HDTF/tree/main) 下载 `clips.zip`。
 2.  根据 `\data\test\general\HDTF.txt` 挑选出 50 个目标视频。
 3.  按顺序重命名后，复制到 `data/test/general/` 文件夹下。
 
